@@ -165,7 +165,7 @@ void render(const std::vector<std::vector<Coordinates> > &polygons)
 
     // Colores de relleno para cada polígono
     Color fillColors[] = {
-        Color(0, 255, 0),     // Verde
+        Color(0, 0, 255),     // Verde
     };
 
     for (size_t i = 0; i < polygons.size(); ++i)
@@ -246,11 +246,12 @@ int main()
     // Definir los polígonos
     std::vector<std::vector<Coordinates> > polygons;
 
-    std::vector<Coordinates> polygon;
-    polygon.push_back(Coordinates(377, 249));
-    polygon.push_back(Coordinates(411, 197));
-    polygon.push_back(Coordinates(436, 249));
-    polygons.push_back(polygon);
+    std::vector<Coordinates> polygon2;
+    polygon2.push_back(Coordinates(321, 335));
+    polygon2.push_back(Coordinates(288, 286));
+    polygon2.push_back(Coordinates(339, 251));
+    polygon2.push_back(Coordinates(374, 302));
+    polygons.push_back(polygon2);
 
     // Renderizar la escena
     render(polygons);

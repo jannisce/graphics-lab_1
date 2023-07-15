@@ -167,6 +167,7 @@ void render(const std::vector<std::vector<Coordinates> > &polygons)
     Color fillColors[] = {
         Color(255, 255, 0),     // amarillo
         Color(0, 0, 255),     // Verde
+        Color(255, 0, 0),     // Verde
     };
 
     for (size_t i = 0; i < polygons.size(); ++i)
@@ -266,6 +267,12 @@ int main()
     polygon2.push_back(Coordinates(339, 251));
     polygon2.push_back(Coordinates(374, 302));
     polygons.push_back(polygon2);
+
+    std::vector<Coordinates> polygon3;
+    polygon3.push_back(Coordinates(377, 249));
+    polygon3.push_back(Coordinates(411, 197));
+    polygon3.push_back(Coordinates(436, 249));
+    polygons.push_back(polygon3);
 
     // Renderizar la escena
     render(polygons);
